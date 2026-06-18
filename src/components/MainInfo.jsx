@@ -1,10 +1,10 @@
-function MainInfo() {
+function MainInfo(props) {
   return (
     <div className="main-info">
-      <h1>Odesa</h1>
+      <h1>{props.name}</h1>
       <ul>
-        <li>Ukraine</li>
-        <li>Established in 1794</li>
+        <li>{props.country}</li>
+        <li>Established in {props.established}</li>
       </ul>
     </div>
   )
